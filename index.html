@@ -24,7 +24,7 @@
     -->
     <script>
       window.onload = function () {
-        alert("Android users experiencing extreme camera zoom should go to browser setting, accessibility/webpage view, turn off force enable zoom/pinch to zoom in/out of webpages\n\nClick on X on the top right hand to partially hide background");
+        alert("hello world :)");
       };
     </script>
   </head>
@@ -53,8 +53,8 @@
           make sure that the model file is placed in the same repository where this index.html file is located
         -->
         <a-asset-item
-          id="template"
-          src="template.gltf"
+          id="among_us"
+          src="among_us.gltf"
         >
         </a-asset-item>
       </a-assets>
@@ -86,13 +86,14 @@
         if your model is animated, type "animation-mixer" without the inverted commas in another line below gesture-handler with the same alignment
       -->
         <a-entity
-          id="template-model"
-          gltf-model="#template"
+          id="among_us-model"
+          gltf-model="#among_us"
           position="0 0 0"
           rotation="0 0 0"
           scale="1 1 1"
           class="clickable"
-          gesture-handler        
+          gesture-handler
+          animation-mixer        
         >
         </a-entity>
 
